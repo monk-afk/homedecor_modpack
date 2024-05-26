@@ -64,28 +64,6 @@ homedecor.register("armchair", {
 
 -- crafts
 
-unifieddyes.register_color_craft({
-	output = "lrfurn:armchair",
-	palette = "wallmounted",
-	type = "shapeless",
-	neutral_node = "lrfurn:armchair",
-	recipe = {
-		"NEUTRAL_NODE",
-		"MAIN_DYE"
-	}
-})
-
-unifieddyes.register_color_craft({
-	output = "homedecor:armchair",
-	palette = "wallmounted",
-	type = "shapeless",
-	neutral_node = "homedecor:armchair",
-	recipe = {
-		"NEUTRAL_NODE",
-		"MAIN_DYE"
-	}
-})
-
 minetest.register_craft({
 	output = "lrfurn:armchair",
 	recipe = {
@@ -104,6 +82,17 @@ minetest.register_craft({
 	}
 })
 
+unifieddyes.register_color_craft({
+	output = "lrfurn:armchair",
+	palette = "wallmounted",
+	type = "shapeless",
+	neutral_node = "lrfurn:armchair",
+	recipe = {
+		"NEUTRAL_NODE",
+		"MAIN_DYE"
+	}
+})
+
 minetest.register_craft({
 	output = "homedecor:armchair 2",
 	recipe = {
@@ -111,6 +100,17 @@ minetest.register_craft({
 	{ "group:wood","group:wood" },
 	{ homedecor.materials.wool_white,homedecor.materials.wool_white },
 	},
+})
+
+unifieddyes.register_color_craft({
+	output = "homedecor:armchair",
+	palette = "wallmounted",
+	type = "shapeless",
+	neutral_node = "homedecor:armchair",
+	recipe = {
+		"NEUTRAL_NODE",
+		"MAIN_DYE"
+	}
 })
 
 minetest.register_craft({

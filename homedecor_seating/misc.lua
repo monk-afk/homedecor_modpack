@@ -296,6 +296,15 @@ minetest.register_craft({
 	},
 })
 
+minetest.register_craft({
+	type = "shapeless",
+	output = "homedecor:kitchen_chair_padded",
+	recipe = {
+		"homedecor:kitchen_chair_wood",
+		homedecor.materials.wool_white,
+	},
+})
+
 unifieddyes.register_color_craft({
 	output = "homedecor:kitchen_chair_padded",
 	palette = "wallmounted",
@@ -305,15 +314,6 @@ unifieddyes.register_color_craft({
 		"NEUTRAL_NODE",
 		"MAIN_DYE"
 	}
-})
-
-minetest.register_craft({
-	type = "shapeless",
-	output = "homedecor:kitchen_chair_padded",
-	recipe = {
-		"homedecor:kitchen_chair_wood",
-		homedecor.materials.wool_white,
-	},
 })
 
 minetest.register_craft({
